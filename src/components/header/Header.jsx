@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import '../header/header.scss'
+import logo from '../../assets/WatchFlix-removebg-preview.png'
 
 const Header = () => {
   return (
@@ -8,4 +10,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
