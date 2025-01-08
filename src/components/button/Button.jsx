@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types'; // Import prop-types
+import React from "react";
+import PropTypes from "prop-types"; // Import prop-types
 
 const Button = (props) => {
   return (
-    <button 
-      className={`btn ${props.className}`} 
+    <button
+      className={`btn ${props.className}`}
       onClick={props.onClick ? () => props.onClick() : null}
     >
       {props.children} {/* Corrected children */}
@@ -14,8 +14,8 @@ const Button = (props) => {
 
 const OutlineButton = (props) => {
   return (
-    <Button 
-      className={`btn-outline ${props.className}`} 
+    <Button
+      className={`btn-outline ${props.className}`}
       onClick={props.onClick ? () => props.onClick() : null}
     >
       {props.children}
@@ -28,4 +28,3 @@ Button.propTypes = {
 };
 
 export default Button;
-
